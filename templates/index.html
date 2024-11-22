@@ -5,7 +5,7 @@
           href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" 
-          href="style.css">
+          href="{{ url_for('static', filename='style.css') }}">
     <title>Netflix Login</title>
 </head>
 
@@ -117,12 +117,12 @@
             <div>
                 <select class="fa select-language">
                     <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
-                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Español</option>
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;EspaÃ±ol</option>
                 </select>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 
 </html>
