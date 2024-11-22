@@ -24,6 +24,3 @@ def login():
     # Send a response back to the user
     return "Login data received."
 
-# Run the Flask server
-if __name__ == '__main__':
-    app.run(debug=True)

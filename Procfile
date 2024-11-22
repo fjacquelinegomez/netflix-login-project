@@ -1,1 +1,1 @@
-web: gunicorn userdata:netflix-login-project 
+web: gunicorn userdata:app
