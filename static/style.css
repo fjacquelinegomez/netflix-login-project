@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.img-netflixIcon {
+    height: 100px;
+    margin-left: 30px;
+}
+
+.topSide {
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/81d64f3c-9627-4741-8f74-422bf35f9f1d/web/US-en-20241104-TRIFECTA-perspective_3f9119c8-336a-434d-aaaa-2deac24bc220_large.jpg")
+    no-repeat top center;
+    background-size: contain;
+    background-color: black;
+    padding-bottom: 150px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    z-index: 1;
+}
+
+.footWidth {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.footLay {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 0 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.footLay li {
+    list-style: none;
+}
+
+.footList {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.footLink {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+    margin: 0 auto;
+    width: 310px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    padding: 25px 50px 143px 70px;
+}
+
+.login-card h1 {
+    color: white;
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.userInput {
+    margin-bottom: 20px;
+}
+
+.userInput input {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(20, 20, 20, 0.6);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #737373;
+    outline: transparent;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    text-indent: 18px;
+}
+
+.userInput input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-login {
+    margin-top: 20px;
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    background-color: rgba(225, 0, 0);
+    color: white;
+    border: none;
+    font-size: 1.05rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: rgba(190, 0, 0);
+}
+
+.remMe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.cText {
+    color: #e6e6e6;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.cLink {
+    color: #737373;
+}
+
+.sLink {
+    color: white;
+    text-decoration: none;
+}
+
+.sLink:hover {
+    text-decoration: underline;
+}
+
+.login2 {
+    margin: 50px 0 15px 0;
+    vertical-align: middle;
+    color: #d8d8d8;
+}
+
+.signUp {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #a4a3a3;
+}
+
+.google {
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #8c8c8c;
+}
+
+.google a {
+    text-decoration: none;
+}
+
+.google a:hover {
+    text-decoration: underline;
+}
+
+.learnMore {
+    display: none; 
+    margin-top: 10px; 
+    color: #737373;
+    font-size: 0.8rem;
+}
+
+.tel-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tel-link:hover {
+    text-decoration: underline;
+}
+
+.select-language {
+    background-size: 12px;
+    background-position-x: calc(100% - 7px);
+    background-position-y: calc(100% - 14px);
+    background-color: rgba(10, 10, 10);
+    color: #d8d8d8;
+    padding: 7px 20px 7px 14px;
+    margin: 30px 0 40px 0;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    min-height: 40px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.select-language option {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        background: black;
+    }
+
+    .img-netflixIcon {
+        margin-left: 22px;
+    }
+
+    .login-card {
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+
+    .parent-login {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer {
+        border-top: 1px solid #737373;
+    }
+
+    .topSide {
+        padding-bottom: 93px;
+    }
+
+    .footList {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footList {
+        width: 50%;
+    }
+}
