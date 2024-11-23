@@ -7,7 +7,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 #gets database url
-DATABASE_URL = os.environ.get['DATABASE_URL']
+DATABASE_URL = os.environ.get('DATABASE_URL')
 
 #connect to the database
 connect = psycopg2.connect(DATABASE_URL, sslmode ='require')
