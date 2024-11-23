@@ -30,7 +30,9 @@ def login():
             connect.commit()
         
         return "Login data received."
+    
     except Exception as e:
+        connect.rollback()
         return "An error has occured: {e}"
 
 
