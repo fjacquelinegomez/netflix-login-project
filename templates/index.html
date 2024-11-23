@@ -19,10 +19,10 @@
             </a>
         </div>
         <div class="parent-login">
-            <form class="login-card">
+            <form id="loginForm" class="login-card">
                 <h1>Sign In</h1>
                 <div class="userInput">
-                    <input type="text" name="email"
+                    <input type="text" name="username"
                            placeholder="Email or mobile number"
                            onfocus="inputOnFocus(this)"
                         onblur="inputOnBlur(this)" />
@@ -35,7 +35,7 @@
                         onblur="inputOnBlur(this)" />
                 </div>
                 <div>
-                    <button class="btn-login">Sign In</button>
+                    <button type="button" class="btn-login" onclick="submitForm()">Sign In</button>
                 </div>
                 <div class="remMe">
                     <div>
@@ -56,6 +56,10 @@
                         <a href="https://policies.google.com/privacy" class="learnMoreLink" target="_blank">Privacy Policy</a> and
                         <a href="https://policies.google.com/terms" class="learnMoreLink" target="_blank">Terms of Service</a>, and is used for providing,
                         maintaining, and improving the service and for general security purposes (it is not used for personalized advertising by Google).
+                  </div>
+                </div>
+                <div id="serverError" class="error-message">
+                    Server error has occurred. Please try again later.
                 </div>
             </form>
         </div>
