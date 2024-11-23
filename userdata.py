@@ -26,6 +26,7 @@ def login():
     #add user data to the database
     with connect.cursor() as cur:
         cur.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
+        connect.commit()
     
     # Send a response back to the user
     return "Login data received."
