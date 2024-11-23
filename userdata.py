@@ -23,17 +23,14 @@ def login():
     username = request.form.get('username')
     password = request.form.get('password')
     
-    try:
-        #add user data to the database
-        with connect.cursor() as cur:
-            cur.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
-            connect.commit()
+    #add user data to the database
+    with connect.cursor() as cur:
+        cur.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
+        connect.commit()
         
-        return "Login data received."
+    return "Login data received."
     
-    except Exception as e:
-        connect.rollback()
-        return "An error has occured: {e}"
+    
 
 
 #if __name__ == '__main__':
