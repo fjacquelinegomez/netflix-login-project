@@ -1,5 +1,6 @@
 # Resources:
 #1. https://flask.palletsprojects.com/en/stable/
+#2. **NOTE: Majority of references are listed in the report
 import os
 import psycopg2
 from flask import Flask, render_template, request
